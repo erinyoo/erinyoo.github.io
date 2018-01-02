@@ -1,0 +1,55 @@
+//Colors
+$background-color: white;
+$body-color: black;
+$link-color: blue;
+$header-color: black;
+
+//Fonts
+$main-font: 'Roboto', sans-serif;
+
+//Columns
+$general-padding: 10px;
+
+body {
+    background-color: $background-color;
+    color: $body-color;
+    font-family: $main-font;
+}
+
+p {
+    color: $body-color;
+    font-size: 1em;
+}
+
+h1 {
+    color: $header-color;
+    font-size: 3.8em;
+}
+
+h2 {
+    color: $header-color;
+    font-size: 3em;
+}
+
+h3 {
+    color: $header-color;
+    font-size: 2.2em;
+}
+
+.column-large {
+    padding: $general-padding;
+    width: 100%;
+    height: 100%;
+}
+
+.column-med {
+    padding: $general-padding;
+    width: 50%;
+    height: 100%;
+}
+
+.column-small {
+    padding: $general-padding;
+    width: 25%;
+    height: 100%;
+}
