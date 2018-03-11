@@ -5,7 +5,7 @@ $link-color: blue;
 $header-color: black;
 
 //Fonts
-$main-font: 'Roboto', sans-serif;
+$main-font: 'Fira Sans', sans-serif;
 
 //Columns
 $general-padding: 10px;
@@ -19,11 +19,13 @@ body {
 p {
     color: $body-color;
     font-size: 1em;
+    font-weight:300;
 }
 
 h1 {
     color: $header-color;
     font-size: 3.8em;
+    font-weight:300;
 }
 
 h2 {
