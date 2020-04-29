@@ -1,0 +1,27 @@
+.subheaderContainer {
+	position: absolute;
+	color: #000;
+	font-family: calluna, serif;
+	text-align: left;
+	text-transform: none;
+	top: 120px;
+	left: 15px;
+}
+
+@media screen and (min-width: 850px) {
+    .subheaderContainer {
+		font-size: 24px;
+    }
+}
+  
+@media screen and (max-width: 849px) {
+    .subheaderContainer {
+		font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .subheaderContainer {
+		font-size: 16px;
+    }
+}

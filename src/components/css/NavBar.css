@@ -1,0 +1,46 @@
+.linkContainer {
+    position: absolute;
+    font-family: soleil, serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    top: 240px;
+    left: 15px;
+}
+  
+.linkContainer a:link {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.linkContainer a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.linkContainer a:visited {
+    color: #000;
+}
+
+.links {
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 850px) {
+    .linkContainer {
+		top: 240px;
+    }
+}
+  
+@media screen and (max-width: 849px) {
+    .linkContainer {
+		top: 220px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .linkContainer {
+		top: 245px;
+    }
+}

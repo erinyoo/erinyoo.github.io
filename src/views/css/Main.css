@@ -1,0 +1,23 @@
+@media screen and (min-width: 850px) {
+    .container {
+        width: 600px;
+    }
+}
+  
+@media screen and (max-width: 849px) {
+    .container {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: calc(100% - 100px);
+    }
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    font-family: soleil, sans-serif;
+}

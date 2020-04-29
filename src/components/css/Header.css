@@ -1,0 +1,79 @@
+.container {
+	position: absolute;
+	color: #E2E2E2;
+    font-size: 18px;
+    text-transform: uppercase;
+    top: 50px;
+}
+
+.erinyoo {
+    position: absolute;
+    padding: 10px 0px 0px 65px;
+}
+
+.sw {
+    position: absolute;
+}
+  
+@media screen and (min-width: 849px) {
+    .container {
+        left: -50px;
+    }
+
+    .sw {
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .erinyoo {
+        display: none;
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .container {
+		left: 0px;
+    }
+
+    .sw {
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .erinyoo {
+        display: none;
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .container {
+        left: 0px;
+        top: 30px;
+    }
+
+    .sw {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        left: -40px;
+        top: 50px;
+    }
+
+    .sw {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        left: -40px;
+        top: 50px;
+    }
+
+    .sw {
+        width: 40%;
+    }
+}
