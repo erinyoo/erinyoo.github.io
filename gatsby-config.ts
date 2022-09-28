@@ -12,4 +12,30 @@ const config: GatsbyConfig = {
   plugins: ["gatsby-plugin-theme-ui"]
 };
 
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-theme-ui',
+      options: {
+        preset: require('./src/theme'),
+      },
+    },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Inter`,
+            file: `https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap`,
+          },
+        ],
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
+}
+
 export default config;
