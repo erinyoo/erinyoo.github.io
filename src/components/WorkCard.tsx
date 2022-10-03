@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Link } from 'gatsby'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { Card, Text, Image } from 'theme-ui';
 
 interface WorkCardProps {
@@ -10,7 +10,7 @@ interface WorkCardProps {
     readonly linkHref: string;
 }
 
-const WorkCard: FC<WorkCardProps> = ({title, imagePath, linkTitle, linkHref}) => {
+const WorkCard: FC<WorkCardProps> = ({ title, imagePath, linkTitle, linkHref }) => {
     return (
         <Card p={2} sx={{ maxWidth: 300 }}>
             <Image src={imagePath} />

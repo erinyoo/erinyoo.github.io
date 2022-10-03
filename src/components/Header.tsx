@@ -1,19 +1,13 @@
 /** @jsxImportSource theme-ui */
 import { FC } from 'react'
-import { Box } from 'theme-ui';
-import { Link } from 'gatsby'
+import { Box, Text } from 'theme-ui';
 
-interface HeaderProps {
-    title: string;
-}
-
-const Header: FC<HeaderProps> = ({ title }) => {
+const Header: FC = () => {
     return (
-        <Box sx={{ marginLeft: 3, flex: 'auto', marginTop: 2 }}>
-            <Link to="/" activeClassName="active" 
-                sx={{ fontSize: 9, color: 'text', fontWeight: 'header', textDecorationLine: 'none' }}>
-                {title}
-            </Link>
+        <Box sx={{ ml: 11, flex: 'auto', marginTop: 2 }}>
+            <Text sx={{ fontSize: 9, color: 'text', fontWeight: 'header', textDecorationLine: 'none' }}>
+                Hi, I'm Erin
+            </Text>
         </Box>
     );
 };

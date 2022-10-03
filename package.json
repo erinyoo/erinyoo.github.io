@@ -17,9 +17,10 @@
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
-    "@emotion/react": "^11.9.0",
+    "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.8.1",
     "@mdx-js/react": "^1.6.22",
+    "framer-motion": "^7.4.0",
     "gatsby": "^4.15.1",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^2.23.1",
@@ -30,7 +31,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.3.0",
-    "theme-ui": "^0.14.5"
+    "theme-ui": "^0.14.7"
   },
   "devDependencies": {
     "@types/node": "^17.0.35",
