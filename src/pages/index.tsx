@@ -1,8 +1,9 @@
 /** @jsxImportSource theme-ui */
-import { Box, Flex } from 'theme-ui';
+import { Flex } from 'theme-ui';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import LandingImages from '../components/LandingImages';
+import DBSACard from '../components/DBSACard';
 
 
 const IndexPage = () => {
@@ -11,9 +12,13 @@ const IndexPage = () => {
     <>
       <NavBar />
 
-      <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 7, marginRight: 7 }}>
+      <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 3, marginRight: 7 }}>
         <Header />
         <LandingImages />
+      </Flex>
+
+      <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 3, marginRight: 7 }}>
+        <DBSACard />
       </Flex>
     </>
   )
