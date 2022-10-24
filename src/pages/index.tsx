@@ -19,6 +19,7 @@ const IndexPage = () => {
 
   return (
     <>
+      <meta name="viewport" content="width=400, initial-scale=.65" />
       <div sx={{
         '@media screen and (max-width: 1300px)': {
           display: 'none',

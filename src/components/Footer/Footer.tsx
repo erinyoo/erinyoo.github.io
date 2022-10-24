@@ -15,7 +15,7 @@ const Footer: FC = () => {
     return (
         <Flex sx={{
             flexDirection: 'column', justifyItems: 'center', justifyContent: 'center', position: 'absolute', height: 150, display: 'center', textAlign: 'center',
-            backgroundColor: '#faf7f0', left: 0, right: 0, marginLeft: 'auto', width: '100%', marginRight: 'auto', bottom: -450
+            backgroundColor: '#faf7f0', left: 0, right: 0, marginLeft: 'auto', width: '100%', marginRight: 'auto', bottom: -650
         }}>
             <Box sx={{ alignSelf: 'center', width: 200, paddingTop: 4 }}>
                 <Box sx={{ width: 200 }}>
@@ -31,7 +31,7 @@ const Footer: FC = () => {
                         <StaticImage sx={{ margin: 2 }} src={"../../images/Dribbble.png"} alt={"Dribbble"} width={24} />
                     </Link>
                     <Link to="https://www.linkedin.com/in/erinyoo/" activeClassName="active" sx={linkCSS}>
-                        <StaticImage sx={{ margin: 2 }} src={"../../images/LinkedIn.svg"} alt={"LinkedIn"} width={22} />
+                        <StaticImage sx={{ margin: 2 }} src={"../../assets/LinkedIn.svg"} alt={"LinkedIn"} width={22} />
                     </Link>
                 </Box>
             </Box>
