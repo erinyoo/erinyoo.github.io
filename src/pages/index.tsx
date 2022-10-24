@@ -14,7 +14,6 @@ import FooterNarrow from '../components/Footer/FooterNarrow';
 import FooterMoweb from '../components/Footer/FooterMoweb';
 import DBSACardMoweb from '../components/DBSACard/DBSACardMoweb';
 
-
 const IndexPage = () => {
 
   return (
@@ -81,3 +80,12 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const Head = () => {
+  return (
+    <>
+      <title>Erin Yoo</title>
+      <link rel="icon" type="image/png" href="../images/signature.png" />
+    </>
+  );
+};
