@@ -20,8 +20,8 @@ const LandingImages: FC = () => {
   const xGP = (windowWidth - mouseX * 3) / 100;
   const yGP = (windowHeight - mouseY * 3.5) / 100;
 
-  const xDog = (windowWidth - mouseX * 4) / 100;
-  const yDog = (windowHeight - mouseY * 10) / 100;
+  const xDog = (windowWidth - mouseX * 6) / 100;
+  const yDog = (windowHeight - mouseY * 3) / 100;
 
   const xBallOne = (windowWidth - mouseX * 10) / 100;
   const yBallOne = (windowHeight - mouseY * 5) / 100;
@@ -38,23 +38,23 @@ const LandingImages: FC = () => {
         <StaticImage alt={"erin"} src={"../../images/erin.png"} width={390} />
       </motion.div>
 
-      <motion.div style={{ translateX: xGP, translateY: yGP, top: 290, right: 350, zIndex: 4, position: 'absolute' }}>
+      <motion.div style={{ translateX: xGP, translateY: yGP, top: 300, right: 350, zIndex: 4, position: 'absolute' }}>
         <StaticImage alt={"greenpaint"} src={"../../images/greenpaint.png"} width={450} />
       </motion.div>
 
-      <motion.div style={{ translateX: xDog, translateY: yDog, right: 430, top: 440, position: 'absolute' }}>
+      <motion.div style={{ translateX: xDog, translateY: yDog, left: 100, top: 450, position: 'absolute' }}>
         <StaticImage alt={"doggo"} src={"../../images/doggo.png"} width={300} />
       </motion.div>
 
-      <motion.div style={{ translateX: xBallOne, translateY: yBallOne, top: 650, right: 300, zIndex: 2, position: 'absolute' }}>
+      <motion.div style={{ translateX: xBallOne, translateY: yBallOne, top: 550, left: 440, zIndex: 2, position: 'absolute' }}>
         <StaticImage alt={"tennisballone"} src={"../../images/tennisballone.png"} width={100} />
       </motion.div>
 
-      <motion.div style={{ translateX: xBallTwo, translateY: yBallTwo, top: 600, right: 200, zIndex: 3, position: 'absolute' }}>
+      <motion.div style={{ translateX: xBallTwo, translateY: yBallTwo, top: 520, left: 620, zIndex: 3, position: 'absolute' }}>
         <StaticImage alt={"tennisballtwo"} src={"../../images/tennisballtwo.png"} width={100} />
       </motion.div>
 
-      <motion.div style={{ translateX: xBP, translateY: yBP, top: 550, right: 50, position: 'absolute' }}>
+      <motion.div style={{ translateX: xBP, translateY: yBP, top: 490, left: 500, position: 'absolute' }}>
         <StaticImage alt={"bouncepaint"} src={"../../images/bouncepaint.png"} width={400} />
       </motion.div>
     </>

@@ -20,9 +20,9 @@ const NavBar: FC = () => {
                     sx={linkCSS}>
                     About
                 </Link>
-                <Link to="/work" activeClassName="active"
+                <Link to="/resume" activeClassName="active"
                     sx={linkCSS}>
-                    Work
+                    Resume
                 </Link>
                 <Link to="/contact" activeClassName="active"
                     sx={linkCSS}>

@@ -1,23 +1,39 @@
 /** @jsxImportSource theme-ui */
-import { FC } from 'react'
+import { motion } from 'framer-motion';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Box, Card, Text, Flex } from 'theme-ui';
+import { FC } from 'react'
+import { Box, Card, Flex, Text } from 'theme-ui';
+// import DBSAContent from './DBSAContent';
 
 const DBSACard: FC = () => {
     return (
-        <Box css={{ position: 'absolute', border: 'solid', borderRadius: 20, padding: 30, width: '100%', marginRight: 'auto', marginLeft: 'auto', left: 0, right: 0, top: 800 }}>
+        <motion.div sx={{
+            position: 'absolute', marginRight: 'auto', marginLeft: 'auto', left: 0, right: 0, top: 850,
+            background: 'linear-gradient(135deg, rgba(155,212,247,0.26514355742296913) 54%, rgba(255,254,252,0.30155812324929976) 95%)',
+            backgroundColor: '#b3e3fc', borderRadius: 20, padding: 30, width: '90%',
+            boxShadow: 'rgba(149, 157, 165, 0.1) 0px 8px 24px',
+        }} whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 200, damping: 30 }}>
             <Card sx={{ marginTop: 5 }}>
-                <Flex dir={'row'}>
-                    <Text sx={{ paddingLeft: 5, flexGrow: 1, fontSize: 6, color: 'text', fontWeight: 'titles', textDecorationLine: 'none' }}>
-                        DBSA Wellness
-                    </Text>
-                    <Box css={{ border: 'solid', borderRadius: 100, width: 120, height: 40, textAlign: 'center' }}>Case Study</Box>
-                    <Box sx={{ alignSelf: 'flex-end', paddingTop: 2 }}>
-                        <StaticImage src={"../../images/DBSA.png"} alt={"DBSA"} width={300} />
+                <Flex sx={{ flexDirection: 'column' }}>
+                    <Box sx={{ flexGrow: 1 }} >
+                        <Flex sx={{ flexDirection: 'column', justifyContent: 'space-between', height: 100, paddingLeft: 4, color: '#007cd4' }}>
+                            <Text sx={{ fontSize: 6, fontWeight: 'titles', textDecorationLine: 'none' }}>
+                                DBSA Wellness
+                            </Text>
+                            <Box sx={{ fontSize: 3, paddingTop: 1, fontWeight: 500, opacity: .6 }}>
+                                Girls in Tech SF Hackathon
+                            </Box>
+                            <Box sx={{ fontSize: 3, paddingTop: 1, zIndex: 2, width: 400, }}>
+                                Making self-managing mental health with DBSA's resources easier and more accessible for everyone.
+                            </Box>
+                        </Flex>
+                    </Box>
+                    <Box sx={{ width: '70%', alignSelf: 'flex-end', zIndex: 1, marginTop: -40 }}>
+                        <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} height={1500} />
                     </Box>
                 </Flex>
             </Card>
-        </Box>
+        </motion.div>
     );
 };
 

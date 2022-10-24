@@ -12,6 +12,7 @@ import HeaderMoweb from '../components/Header/HeaderMoweb';
 import DBSACardNarrow from '../components/DBSACard/DBSACardNarrow';
 import FooterNarrow from '../components/Footer/FooterNarrow';
 import FooterMoweb from '../components/Footer/FooterMoweb';
+import DBSACardMoweb from '../components/DBSACard/DBSACardMoweb';
 
 
 const IndexPage = () => {
@@ -69,7 +70,7 @@ const IndexPage = () => {
           <NavBar />
           <LandingImagesMoweb />
           <HeaderMoweb />
-          <DBSACardNarrow />
+          <DBSACardMoweb />
         </Box >
 
         <FooterMoweb />

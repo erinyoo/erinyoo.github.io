@@ -8,7 +8,7 @@ const Header: FC = () => {
             <Text sx={{ fontSize: 9, color: 'text', fontWeight: 'header', textDecorationLine: 'none' }}>
                 Hi, I'm Erin
             </Text>
-            <Box sx={{ width: '40%' }}>
+            <Box sx={{ maxWidth: 350 }}>
                 <Text sx={{ fontSize: 3, color: 'secondary' }}>
                     I'm focused on design + development harmony and devoted to creating the best possible experience for the user.
                 </Text>
