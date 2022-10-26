@@ -1,7 +1,10 @@
 /** @jsxImportSource theme-ui */
 import { Box } from 'theme-ui';
-import AboutContent from '../components/AboutContent';
+import AboutContent from '../components/About/AboutContent';
+import AboutNarrowContent from '../components/About/AboutNarrowContent';
 import NavBar from '../components/NavBar';
+import Moweb from '../components/ResponsiveViews/Moweb';
+import Narrow from '../components/ResponsiveViews/Narrow';
 import Wide from '../components/ResponsiveViews/Wide';
 
 const AboutPage = () => {
@@ -15,6 +18,18 @@ const AboutPage = () => {
                     <AboutContent />
                 </Box>
             </Wide>
+            <Narrow>
+                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 600 }}>
+                    <NavBar />
+                    <AboutNarrowContent />
+                </Box>
+            </Narrow>
+            <Moweb>
+                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 500 }}>
+                    <NavBar />
+                    <AboutNarrowContent />
+                </Box>
+            </Moweb>
         </>
     )
 }

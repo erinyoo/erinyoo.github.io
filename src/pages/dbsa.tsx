@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Box } from 'theme-ui';
-import AboutContent from '../components/AboutContent';
+import AboutContent from '../components/About/AboutContent';
 import NavBar from '../components/NavBar';
 import Wide from '../components/ResponsiveViews/Wide';
 

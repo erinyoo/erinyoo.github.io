@@ -9,6 +9,7 @@ const Wide = props => {
             },
             position: 'relative', height: 1000
         }} >
+
             {props.children}
         </div>
     )
