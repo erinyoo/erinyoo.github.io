@@ -41,6 +41,12 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/signature.png',
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
   ],

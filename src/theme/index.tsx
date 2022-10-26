@@ -55,8 +55,8 @@ const theme = {
     background: '#FFFEFC',
     primary: '#24191C',
     secondary: '#AD999F',
-    muted: '#DAD0D3',
-    active: '#C81047',
+    muted: '#6b6868',
+    active: '#6cb2eb',
   },
   styles: {
     root: {

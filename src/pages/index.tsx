@@ -13,18 +13,17 @@ import DBSACardNarrow from '../components/DBSACard/DBSACardNarrow';
 import FooterNarrow from '../components/Footer/FooterNarrow';
 import FooterMoweb from '../components/Footer/FooterMoweb';
 import DBSACardMoweb from '../components/DBSACard/DBSACardMoweb';
+import Wide from '../components/ResponsiveViews/Wide';
+import Narrow from '../components/ResponsiveViews/Narrow';
+import Moweb from '../components/ResponsiveViews/Moweb';
 
 const IndexPage = () => {
 
   return (
     <>
       <meta name="viewport" content="width=400, initial-scale=.65" />
-      <div sx={{
-        '@media screen and (max-width: 1300px)': {
-          display: 'none',
-        }
-      }} >
-        <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 1200 }}>
+      <Wide>
+        <Box sx={{ position: 'absolute', zIndex: 3, marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 1200 }}>
           <NavBar />
 
           <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 3, marginRight: 7 }}>
@@ -38,13 +37,9 @@ const IndexPage = () => {
         </Box >
 
         <Footer />
-      </div>
+      </Wide>
 
-      <div sx={{
-        '@media screen and (min-width: 1299px), (max-width: 700px)': {
-          display: 'none',
-        }
-      }} >
+      <Narrow>
         <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 600 }}>
           <NavBar />
 
@@ -59,13 +54,9 @@ const IndexPage = () => {
         </Box >
 
         <FooterNarrow />
-      </div>
+      </Narrow>
 
-      <div sx={{
-        '@media screen and (min-width: 699px)': {
-          display: 'none',
-        }
-      }} >
+      <Moweb>
         <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 500 }}>
           <NavBar />
           <LandingImagesMoweb />
@@ -74,7 +65,7 @@ const IndexPage = () => {
         </Box >
 
         <FooterMoweb />
-      </div>
+      </Moweb>
     </>
   )
 }
@@ -85,7 +76,6 @@ export const Head = () => {
   return (
     <>
       <title>Erin Yoo</title>
-      <link rel="icon" type="image/png" href="../images/signature.png" />
     </>
   );
 };

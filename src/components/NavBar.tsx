@@ -6,18 +6,22 @@ import { FC } from 'react';
 
 const NavBar: FC = () => {
     const linkCSS = {
-        letterSpacing: -0.5, fontSize: 4, color: 'primary', m: 3, textDecoration: 'none', fontWeight: 'bold',
+        letterSpacing: -0.5, fontSize: 4, color: 'muted', m: 3, textDecoration: 'none', fontWeight: 'bold',
         '&.active': {
-            color: 'active',
+            color: 'primary',
         },
     };
 
     return (
         <Flex sx={{ py: 4, justifyContent: 'center' }}>
             <Box sx={{ textAlign: 'left' }}>
-                <StaticImage alt={"signature"} src={"../images/signature.png"} width={95} />
+                <Link to={'/'} activeClassName="active" ><StaticImage alt={"signature"} src={"../images/signature.png"} width={95} /></Link>
             </Box>
             <Box sx={{ textAlign: 'right', alignContent: "flex-end", paddingTop: 3, marginLeft: 'auto', }}>
+                <Link to="/" activeClassName="active"
+                    sx={linkCSS}>
+                    Home
+                </Link>
                 <Link to="/about" activeClassName="active"
                     sx={linkCSS}>
                     About

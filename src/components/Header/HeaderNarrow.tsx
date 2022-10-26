@@ -9,7 +9,7 @@ const Header: FC = () => {
                 Hi, I'm Erin
             </Text>
             <Box sx={{ maxWidth: 350 }}>
-                <Text sx={{ fontSize: 3, color: 'secondary' }}>
+                <Text sx={{ fontSize: 3, color: 'text', fontWeight: 'body' }}>
                     I'm focused on design + development harmony and devoted to creating the best possible experience for the user.
                 </Text>
             </Box>

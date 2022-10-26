@@ -14,8 +14,7 @@ const Footer: FC = () => {
 
     return (
         <Flex sx={{
-            flexDirection: 'column', position: 'absolute', justifyItems: 'center', justifyContent: 'center', height: 120, display: 'center', textAlign: 'center',
-            backgroundColor: '#faf7f0', left: 0, right: 0, marginLeft: 'auto', width: '100%', marginRight: 'auto', bottom: -300
+            flexDirection: 'column', position: 'absolute', justifyItems: 'center', justifyContent: 'center', height: 120, display: 'center', textAlign: 'center', backgroundColor: '#faf8f7', left: 0, right: 0, marginLeft: 'auto', width: '100%', marginRight: 'auto', bottom: -300
         }}>
             <Box sx={{ paddingTop: 4 }}>
                 <Box>

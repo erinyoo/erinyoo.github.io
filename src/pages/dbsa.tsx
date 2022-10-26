@@ -4,7 +4,7 @@ import AboutContent from '../components/AboutContent';
 import NavBar from '../components/NavBar';
 import Wide from '../components/ResponsiveViews/Wide';
 
-const AboutPage = () => {
+const DBSAPage = () => {
 
     return (
         <>
@@ -12,19 +12,19 @@ const AboutPage = () => {
             <Wide>
                 <Box sx={{ position: 'absolute', zIndex: 3, marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 1200 }}>
                     <NavBar />
-                    <AboutContent />
+                    <Box sx={{ fontSize: 5, fontWeight: 'header' }}></Box>
                 </Box>
             </Wide>
         </>
     )
 }
 
-export default AboutPage
+export default DBSAPage
 
 export const Head = () => {
     return (
         <>
-            <title>About Me</title>
+            <title>DBSA Wellness</title>
         </>
     );
 };
