@@ -1,4 +1,6 @@
 /** @jsxImportSource theme-ui */
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import { Box, Flex, Text } from 'theme-ui';
 
 const AboutContent = () => {
@@ -6,32 +8,33 @@ const AboutContent = () => {
     return (
         <Box sx={{ width: '70%', position: 'absolute', left: 0, right: 0, marginLeft: 'auto', marginRight: 'auto' }}>
             <Flex sx={{ flexDirection: 'row' }}>
-                <Box sx={{ fontSize: 1, width: '65%', position: 'absolute' }}>
+                <Box sx={{ width: '25%' }}>
+                    <StaticImage src={"../images/abouterin.png"} alt={"About Erin"} width={400} />
+                </Box>
+                <Box sx={{ fontSize: 2, width: '65%' }}>
                     <p>
-                        Hi there! I'm Erin — I'm a frontend enthusiast, curious illustrator, and passionate designer. I grew up in Florida, but I'm currently based in San Francisco.
+                        Hi there! I'm Erin — I'm a frontend developer at Microsoft building out beautiful UI elements for the current <Link sx={{
+                            color: 'primary',
+                            '&.active': {
+                                color: 'primary',
+                            },
+                        }} to={'https://techcommunity.microsoft.com/t5/microsoft-viva-blog/announcing-answers-in-microsoft-viva/ba-p/3634288#:~:text=Answers%20within%20Viva%20Engage&text=Answers%20helps%20organize%20questions%20and,to%20existing%20knowledge%20and%20experts.&text=Users%20can%20ask%20questions%2C%20see,own%20answers%20to%20open%20questions.&text=Users%20can%20also%20follow%20individual,when%20new%20questions%20are%20available.'}>Viva Engage Answers</Link> effort. My next career journey is to shift into product design, a scary endeavor but one I truly believe is my next calling.
                     </p>
 
                     <p>
-                        My early interest in art and design has always driven me career wise. For the first year, I found fulfillment in being able to build out and engineer beautiful UI elements for the new Yammer redesign, "Glammer". This sprouted not only a solid design space in Yammer, but also my interest in the product design area. Since moving into the Viva Engage Answers world I've found myself enveloped within the design process as I worked closely with designers to bring to fruition a completely new product.
+                        Since the <Link sx={{
+                            color: 'primary',
+                            '&.active': {
+                                color: 'primary',
+                            },
+                        }} to={'https://techcommunity.microsoft.com/t5/yammer-blog/the-new-yammer-is-generally-available-worldwide/ba-p/1521869'}>Yammer shift into "Glammer"</Link>, design has sprouted a solid space within the team and has also been an integral part of my work as a frontend engineer. Since moving into the Viva Engage Answers world, I've found myself working closely with a team of talented designers who inspire me and also helped spark my interest in shifting to product design. The same things that drove me to become a frontend developer now translate to the core reasons I find product design my next step: <Text sx={{ fontWeight: 'bold' }}>an appreciation for the aesthetics</Text>, <Text sx={{ fontWeight: 'bold' }}>the desire to challenge my creativity</Text>, and <Text sx={{ fontWeight: 'bold' }}>a love for creating for the user</Text>.
                     </p>
 
                     <p>
-                        Since my push into the product design atmosphere, I've found myself thinking about what guides me in the work I do and the work I want to do, product design related or not. Tech is a vast industry and I'm often reminded of what type of impact I can make in any job within the industry. So moving forward, I hope to follow these "guiding lights", and I hope to improve them and shape them.
-                        <p>
-                            <li>
-                                <Text sx={{ fontWeight: 'bold' }}>Always with empathy.</Text> 'Nuff said right?
-                            </li>
-                            <li>
-                                <Text sx={{ fontWeight: 'bold' }}>Make it accessible, then make it more accessible.</Text> Accessibility doesn't just stop at the WCAG standards, it's an expansive field and I'm constantly trying to learn and understand what I may have missed in the area.
-                            </li>
-                            <li>
-                                <Text sx={{ fontWeight: 'bold' }}>Making the designs make sense.</Text> Whether it's to the user using the product or to the developer at hand off, the design MUST make sense. The design must hold meaning and justification. I've felt the disconnect between design and engineering before and it's a recipe for disaster.
-                            </li>
-                            <li>
-                                <Text sx={{ fontWeight: 'bold' }}>What's outside of outside the box?</Text> Designing and engineering solutions doesn't just come to me naturally. It requires a hint of madness. Then a hint of rationality.
-                            </li>
-                        </p>
+                        When I'm not working or reading up on the latest trends, you may often find me doodling, illustrating, or snuggling my pup, Eevee (yes the Pokémon!). If I'm not doing any of the above, I may be heads down working on a new Lego set or screaming too much on Valorant.
                     </p>
+
+                    <Box sx={{ width: '30%' }}></Box><StaticImage src={"../images/erinandeevee.png"} alt={"Erin and Eevee"} width={450} />
                 </Box>
             </Flex>
         </Box>
