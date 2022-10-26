@@ -1,2 +1,2 @@
-# erinyoo.github.io
-Erin Yoo
+# Hi
+Welcome to my crib
