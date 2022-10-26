@@ -26,7 +26,7 @@ const NavBar: FC = () => {
                     sx={linkCSS}>
                     About
                 </Link>
-                <Link to="/resume" activeClassName="active"
+                <Link to="https://drive.google.com/file/d/1V3lsY2jwbWkCeVdtrhm9W79c-kbngArO/view?usp=sharing" activeClassName="active"
                     sx={linkCSS}>
                     Resume
                 </Link>
