@@ -11,8 +11,7 @@ const DBSACardMoweb: FC = () => {
         <Link to={'/dbsa'}>
             <motion.div sx={{
                 position: 'absolute', marginRight: 'auto', marginLeft: 'auto', left: 0, right: 0, top: 700,
-                background: 'linear-gradient(135deg, rgba(155,212,247,0.26514355742296913) 54%, rgba(255,254,252,0.30155812324929976) 95%)',
-                backgroundColor: '#b3e3fc', borderRadius: 20, padding: 30, width: '90%',
+                background: 'linear-gradient(135deg, rgba(155,212,247,0.26514355742296913) 54%, rgba(255,254,252,0.30155812324929976) 95%)', borderRadius: 20, padding: 30, width: '90%',
                 boxShadow: 'rgba(149, 157, 165, 0.1) 0px 8px 24px',
             }} whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 200, damping: 30 }}>
                 <Card sx={{ padding: 2 }}>
@@ -31,7 +30,7 @@ const DBSACardMoweb: FC = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box sx={{ width: '90%', alignSelf: 'center', zIndex: 1, marginTop: 6, marginBottom: -5 }}>
+                        <Box style={{ marginBottom: -40 }} sx={{ width: '90%', alignSelf: 'center', zIndex: 1, marginTop: 6 }}>
                             <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} height={1500} />
                         </Box>
                     </Flex>

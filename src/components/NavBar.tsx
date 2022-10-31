@@ -26,7 +26,7 @@ const NavBar: FC = () => {
                     sx={linkCSS}>
                     About
                 </Link>
-                <Link to="https://github.com/erinyoo/erinyoo.github.io/blob/cf0657d222af9e6249f3631a81935735c8e1b37e/ErinYoo%20-%20Resume%20'22.pdf" activeClassName="active"
+                <Link to="https://drive.google.com/file/d/1V3lsY2jwbWkCeVdtrhm9W79c-kbngArO/view?usp=sharing" activeClassName="active"
                     sx={linkCSS}>
                     Resume
                 </Link>

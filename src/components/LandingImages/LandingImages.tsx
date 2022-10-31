@@ -14,22 +14,22 @@ const LandingImages: FC = () => {
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
 
-  const xErin = (windowWidth - mouseX * 6) / 100;
-  const yErin = (windowHeight - mouseY * 6) / 100;
+  const xErin = (windowWidth - mouseX * -2) / 100;
+  const yErin = (windowHeight - mouseY * 2) / 100;
 
-  const xGP = (windowWidth - mouseX * 3) / 100;
-  const yGP = (windowHeight - mouseY * 3.5) / 100;
+  const xGP = (windowWidth - mouseX * 1.4) / 100;
+  const yGP = (windowHeight - mouseY * 2) / 100;
 
-  const xDog = (windowWidth - mouseX * 6) / 100;
-  const yDog = (windowHeight - mouseY * 3) / 100;
+  const xDog = (windowWidth - mouseX * 4) / 100;
+  const yDog = (windowHeight - mouseY * 4) / 100;
 
-  const xBallOne = (windowWidth - mouseX * 10) / 100;
-  const yBallOne = (windowHeight - mouseY * 5) / 100;
+  const xBallOne = (windowWidth - mouseX * 5) / 100;
+  const yBallOne = (windowHeight - mouseY * 3) / 100;
 
   const xBallTwo = (windowWidth - mouseX * 2) / 100;
-  const yBallTwo = (windowHeight - mouseY * 11) / 100;
+  const yBallTwo = (windowHeight - mouseY * 3) / 100;
 
-  const xBP = (windowWidth - mouseX * 5) / 100;
+  const xBP = (windowWidth - mouseX * 6) / 100;
   const yBP = (windowHeight - mouseY * 2.5) / 100;
 
   return (

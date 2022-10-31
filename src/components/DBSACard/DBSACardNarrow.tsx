@@ -11,9 +11,7 @@ const DBSACardNarrow: FC = () => {
         <Link to={'/dbsa'}>
             <motion.div sx={{
                 position: 'absolute', marginRight: 'auto', marginLeft: 'auto', left: 0, right: 0, top: 600,
-                background: 'linear-gradient(135deg, rgba(155,212,247,0.26514355742296913) 54%, rgba(255,254,252,0.30155812324929976) 95%)',
-                backgroundColor: '#b3e3fc', borderRadius: 20, padding: 30, width: '100%',
-                boxShadow: 'rgba(149, 157, 165, 0.1) 0px 8px 24px',
+                background: 'linear-gradient(135deg, rgba(155,212,247,0.26514355742296913) 54%, rgba(255,254,252,0.30155812324929976) 95%)', borderRadius: 20, padding: 30, width: '100%', boxShadow: 'rgba(149, 157, 165, 0.1) 0px 8px 24px',
             }} whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 200, damping: 30 }}>
                 <Card sx={{ padding: 4 }}>
                     <Flex sx={{ flexDirection: 'column' }}>
@@ -31,8 +29,8 @@ const DBSACardNarrow: FC = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box sx={{ width: '90%', alignSelf: 'center', zIndex: 1, marginTop: 6, marginBottom: -5 }}>
-                            <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} height={1500} />
+                        <Box style={{ marginBottom: -55 }} sx={{ width: '90%', alignSelf: 'center', zIndex: 1, paddingTop: 6 }}>
+                            <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} height={1000} />
                         </Box>
                     </Flex>
                 </Card>

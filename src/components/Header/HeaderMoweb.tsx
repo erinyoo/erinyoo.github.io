@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { FC } from 'react'
 import { Box, Text } from 'theme-ui';
+import HeaderContent from './HeaderContent';
 
 const HeaderMoweb: FC = () => {
     return (
@@ -9,9 +10,7 @@ const HeaderMoweb: FC = () => {
                 Hi, I'm Erin
             </Text>
             <Box>
-                <Text sx={{ fontSize: 3, color: 'text', fontWeight: 'body' }}>
-                    I'm focused on design + development harmony and devoted to creating the best possible experience for the user.
-                </Text>
+                <HeaderContent />
             </Box>
         </Box>
     );
