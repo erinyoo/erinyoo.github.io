@@ -14,13 +14,17 @@ const DBSAContent = () => {
 
     return (
         <Box sx={{ width: '80%', position: 'absolute', left: 0, right: 0, marginLeft: 'auto', marginRight: 'auto', paddingBottom: 16 }}>
-            <Box sx={{ py: 5 }}>
-                <Text sx={{ fontSize: 7, fontWeight: 'header' }}>DBSA Wellness</Text>
-            </Box>
+            <Flex sx={{ py: 5, flexDirection: 'column', justifyContent: 'center' }}>
+                <Box sx={{ width: '30%' }}>
+                    <Text sx={{ fontSize: 7, fontWeight: 'header' }}>DBSA Wellness</Text>
+                </Box>
+                <Box sx={{ width: '90%', alignSelf: 'center', justifyContent: 'center' }}><StaticImage src={"../../images/dbsacover.png"} alt={"cover"} placeholder={'none'} /></Box>
+            </Flex>
+
             <Flex sx={{ width: '100%', flexDirection: 'column', borderRadius: 8, background: 'linear-gradient(150deg, rgba(155,212,247,0.26514355742296913) 54%, rgba(255,254,252,0.30155812324929976) 95%)', boxShadow: 'rgba(149, 157, 165, 0.1) 0px 8px 24px', px: 7, py: 6 }}>
                 <Title title={'Overview'} color={'#007cd4'} />
                 <Text sx={{ paddingTop: 3 }}>
-                    The DBSA Wellness application was created as part of a 36-hour weekend hackathon organized by Girls in Tech SF Hackathon with the overarching theme of mental health awareness. Our team focused on DBSA SF’s problem statement: how might we remove the barrier of cost and access to care, and empower all individuals to self-manage their mental health?
+                    The DBSA Wellness application was created as part of a 36-hour weekend hackathon organized by Girls in Tech SF. The overarching theme of the weekend focused on mental health awareness, and our team focused on DBSA SF’s problem statement: how might we remove the barrier of cost and access to care, and empower all individuals to self-manage their mental health?
                 </Text>
                 <Flex sx={{ paddingTop: 5, flexDirection: 'row', justifyContent: 'space-between' }}>
                     <Box sx={{ flexDirection: 'column', width: '30%' }}>
@@ -32,17 +36,22 @@ const DBSAContent = () => {
                         <Box>Product Strategy, Product Vision, User Research, Visual Design, Prototyping, Illustrating</Box>
                     </Box>
                 </Flex>
+                <Link sx={{ textDecoration: 'none' }} to={'https://www.figma.com/proto/SZhOtgWIkeM7wUtplERzHE/DBSA-Prototype?page-id=3%3A2&node-id=27%3A3309&viewport=4485%2C-948%2C0.5&scaling=scale-down&starting-point-node-id=70%3A3524'}>
+                    <Box sx={{ marginTop: 5, color: '#007cd4', padding: 3, borderRadius: 9, border: '2px solid #007cd4', width: '30%', textAlign: 'center', fontWeight: 'bold' }}>See the final prototype</Box>
+                </Link>
             </Flex>
 
             <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                 <Title title={'The majority of people with clinical mental health challenges do not seek help'} />
-                <Text sx={{ paddingTop: 2 }}>We began the hackathon by trying to understand the reasoning behind the statement above. Based on Sapien Lab’s Mental Health Million Project we discovered that generally, people preferred to self-manage their mental health. Looking specifically at the U.S., it’s revealed that 37% of people preferred this due to a lack of confidence in the mental health system. It’s not an unfounded sentiment, one in five Americans is receiving substandard medical care as a result of society’s deeply ingrained stigma against the mentally ill.</Text>
+                <Text sx={{ paddingTop: 2 }}>
+                    <Link sx={linkCSS} to={'https://mentalstateoftheworld.report/wp-content/uploads/2021/05/Rapid-Report-2021-Help-Seeking.pdf'}>Sapien Lab's Mental Health Million Project</Link> revealed that people actually preferred to self-manage their mental health. Looking specifically at data from the U.S., 37% of people preferred this due to a lack of confidence in the mental health system. What's deeply saddening to me is knowing that it's not an unfounded sentiment. <Link sx={linkCSS} to={'https://www.publichealth.columbia.edu/public-health-now/news/too-often-doctors-stigmatize-people-living-mental-illness'}>One in five Americans is receiving substandard medical care as a result of society's deeply ingrained stigma against the mentally ill</Link>.
+                </Text>
             </Flex>
 
             <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                 <Title title={'Brainstorming for the individual'} />
                 <Text sx={{ paddingTop: 2 }}>
-                    To help focus our vision and problem understanding we performed a workshop with the team to root out pains individuals may feel while trying to self-manage their mental health. The key points revealed were:
+                    To help focus our vision and problem understanding we performed a workshop with the team to root out pains individuals may feel while trying to self-manage their mental health, particularly with DBSA's resources. The key points revealed were:
                     <li sx={{ py: 1, paddingTop: 4 }}>Individuals were struggling to begin self-managing due to a lack of knowledge</li>
                     <li sx={{ py: 1 }}>Individuals felt DBSA's resources were difficult to begin using without outside help.</li>
                     <li sx={{ py: 1 }}>Individuals would be more encouraged to continue self-managing with trackable data and daily encouragement.</li>
@@ -61,64 +70,68 @@ const DBSAContent = () => {
 
             <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                 <Title title={'Determining the MVP'} />
+                <Box sx={{ width: '100%' }}><StaticImage src={"../../images/featuresketching.png"} alt={"featuresketch"} placeholder={'none'} /></Box>
                 <Text sx={{ paddingTop: 2 }}>
-                    Our sketches revealed common features and paths for the product vision and solution. For one, we all decided to focus on a mobile app that’s easily accessible on the go. From there we decided to focus on these user stories:
+                    Through some sketching, a little competitive analysis (Happify, Finch, Calm, & MindShift), and brainstorming we solidified the features and direction of the MVP. We decided to focus on a mobile app that’s easily accessible on the go. From there we prioritized our app's features:
                     <li sx={{ py: 1, paddingTop: 4 }}><Text sx={{ fontWeight: 'bold' }}>Onboarding guidance</Text> - Users are guided through their initial entry into the application with gentle reminders, comforting language, and an “in case of emergency” button.</li>
                     <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Recommendations</Text> - Users receive recommendations for resources they can use based on their initial onboarding answers and daily tasks (e.g. DBSA podcasts, free support groups webinars, etc.)</li>
                     <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Complete their daily wellness wheel</Text> - Users can easily complete the DBSA’s wellness wheel daily and view their wheel history and progress.</li>
                     <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Schedule support groups</Text> - Users can access support group lists in the app and request links and/or set reminders.</li>
                 </Text>
-                <Text sx={{ paddingTop: 4 }}>We then nailed down an initial user flow to help map out what screens we’ll need for the final prototype.</Text>
+                <Text sx={{ paddingTop: 4 }}>Then we nailed down an initial user flow to help us not only map out what screens we'd need, but also give us a sense of the final prototype.</Text>
                 <Box sx={{ width: '100%' }}><StaticImage src={"../../images/dbsauserflow.png"} alt={"lofi"} width={3500} /></Box>
             </Flex>
 
             <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                 <Title title={'Mapping a jumping off point'} />
+                <Box sx={{ width: '100%' }}><StaticImage src={"../../images/componentslibrary.png"} alt={"lofi"} width={3500} /></Box>
                 <Text sx={{ paddingTop: 2 }}>
-                    The time crunch was beginning to set in at this point in the hackathon. To quickly establish the team on the same page for the final design we mapped out simple layouts, discussed color schemes, and defined our typography library. We did this based off of our research and our interview with DBSA's stakeholders.
-                    <Box sx={{ width: '100%' }}><StaticImage src={"../../images/componentslibrary.png"} alt={"lofi"} width={3500} /></Box>
-                    <li sx={{ py: 1, paddingTop: 4 }}><Text sx={{ fontWeight: 'bold' }}>Layouts</Text> - The stakeholders revealed to us that they were looking for something simple and easy not only for the user but also by engineering standards.</li>
-                    <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Color scheme</Text> - The stakeholders requested that their blue logo color, <Text sx={{ color: '#009CDC', fontWeight: 'bold' }}>#009CDC</Text> be included in the scheme, we found the color cold so we utilized a warmer white background and integrated the various wellness area coloring schemes.</li>
+                    At around this time in the hackathon we were realizing how little time we had left. To quickly establish the team on the same ground for the final design we mapped out simple layouts, discussed color schemes, and defined our typography library.
+                    <li sx={{ py: 1, paddingTop: 4 }}><Text sx={{ fontWeight: 'bold' }}>Layouts</Text> - DBSA requested that the design not only be simple for the users, but also for the engineers, constant maintenance is difficult as a non-profit organization.</li>
+                    <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Color scheme</Text> - DBSA also requested that their blue logo color, <Text sx={{ color: '#009CDC', fontWeight: 'bold' }}>#009CDC</Text>, be utilized in some way. Blue can often read as a cold color, so added it as an accent color with a warmer white background.</li>
                 </Text>
                 <Box sx={{ width: '100%' }}><StaticImage src={"../../images/lofi.png"} alt={"lofi"} /></Box>
             </Flex>
 
             <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                 <Title title={'Final design'} />
-                <Text sx={{ paddingTop: 2 }}>
-                    During our DBSA stakeholder meeting, we were given a requirement of ensuring that our designs were easy to engineer and easy to maintain. We kept this in mind while prototyping and finalizing parts of our project.
-                </Text>
                 <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 3 }}>
-                    <Text sx={{ fontSize: 2, fontWeight: 'bold', paddingTop: 2 }}>Onboarding</Text>
-                    <Text sx={{ paddingBottom: 5 }}>We ensured that the questions we asked were intentional and our initial screens explained to users what they were doing. Recommendations were shown immediately after their first onboarding experience.</Text>
+                    <Text sx={{ fontSize: 2, fontWeight: 'bold', paddingTop: 2 }}>Onboarding & Recommendations</Text>
+                    <Text sx={{ paddingBottom: 5 }}>These questions, accompanied by explanation screens, are meant to ease the user into the experience. Finishing the onboarding process then provides first-time users recommendations.</Text>
                 </Flex>
                 <Box sx={{ width: '100%' }}><StaticImage src={"../../images/onboarding.png"} alt={"onboarding"} /></Box>
                 <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                     <Text sx={{ fontSize: 2, fontWeight: 'bold', paddingTop: 2 }}>Completing the daily wheel areas</Text>
-                    <Text sx={{ paddingTop: 2, paddingBottom: 2 }}>We separated each screen to represent a singular question to simplify the experience and show users their results.</Text>
+                    <Text sx={{ paddingTop: 2, paddingBottom: 2 }}>Per each wellness area, we simplified the experience to not only be interactive, but also guide users through the questionnaire. Results at the end are then saved to look back on and track.</Text>
                 </Flex>
                 <Box sx={{ width: '100%' }}><StaticImage src={"../../images/daily.png"} alt={"daily"} /></Box>
                 <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                     <Text sx={{ fontSize: 2, fontWeight: 'bold', paddingTop: 2 }}>Getting support</Text>
-                    <Text sx={{ paddingTop: 2, paddingBottom: 2 }}>We integrated the calendar to not only show daily wellness area results, but also show scheduled support groups.</Text>
+                    <Text sx={{ paddingTop: 2, paddingBottom: 2 }}>Support groups have their own dedicated area where users can schedule groups. The calendar not only aids in reminding users about upcoming groups, but also as a tracker for previous wellness wheels.</Text>
                 </Flex>
                 <Box sx={{ width: '100%' }}><StaticImage src={"../../images/support.png"} alt={"support"} /></Box>
                 <Text sx={{ paddingTop: 4 }}>
                     Since we found ourselves with a little additional time towards the end of the hackathon we decided to add a small nice-to-have feature: a panda, one of our DBSA stakeholder's favorite animal. Well-being apps can often be impersonal and hefty which is why having a virtual little partner can keep things engaging and light.
                 </Text>
                 <Box sx={{ width: '100%', paddingTop: 5, paddingBottom: 3 }}><StaticImage src={"../../images/pandas.png"} alt={"lofi"} width={3500} /></Box>
-                <Text sx={{ paddingTop: 4 }}>
-                    Our final prototype was done in Figma, <Link to={'https://www.figma.com/proto/SZhOtgWIkeM7wUtplERzHE/DBSA-Prototype?page-id=3%3A2&node-id=70%3A3524&viewport=4485%2C-948%2C0.5&scaling=scale-down&starting-point-node-id=70%3A3524'} sx={linkCSS}>please try out the prototype!</Link>
-                </Text>
             </Flex>
 
             <Flex sx={{ width: '100%', flexDirection: 'column', paddingTop: 7 }}>
                 <Title title={'Learning, growing, and moving forward'} />
                 <Text sx={{ paddingTop: 2 }}>
-                    Stuff that I learned from this hackathon.
+                    The hackathon was an opportunity to put all the product designing processes to the test. On paper it's straightforward and understandable, but in practice it's anything but. Working on a team, especially a team of strangers, did nothing more than add to the complexity of getting to the end goal. The weekend definitely sped by faster than I realized, and looking back at it I'm incredibly grateful for the team I found, new connections I've built, and the newfound determination to really practice and get better. Some key takeaways for me:
+                    <li sx={{ py: 1, paddingTop: 4 }}><Text sx={{ fontWeight: 'bold' }}>Teamwork is complicated but rewarding.</Text> Open communication and active listening was so important especially since we were all complete strangers. Learning to say "YES, AND..."</li>
+                    <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Prioritizing prioritizing.</Text> Yes I wrote the word twice. This was key to getting things done, especially in such a short amount of time. As much as we wanted to do ALL the great ideas we came up with, we couldnt. And that's okay (for now).</li>
+                    <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Presentation makes perfection.</Text> Although not winners at the hackathon, we were winners in our hearts. We debriefed after awards ceremony and agreed that our presentation was lackluster. In the end, that is really all the stakeholders or judges will see.</li>
                 </Text>
                 <Text sx={{ paddingTop: 4 }}>
-                    Stuff that I think can be improved moving forward
+                    In terms of the product itself, there's always room for improvement. These specific areas were something we thought were important to note for the future.
+                    <li sx={{ py: 1, paddingTop: 4 }}><Text sx={{ fontWeight: 'bold' }}>Copywriting & tone</Text></li>
+                    <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Accessibility for all ages (18-80)</Text></li>
+                    <li sx={{ py: 1 }}><Text sx={{ fontWeight: 'bold' }}>Flushed out character design</Text></li>
+                </Text>
+                <Text sx={{ paddingTop: 4 }}>
+                    Our final prototype was done in Figma, <Link to={'https://www.figma.com/proto/SZhOtgWIkeM7wUtplERzHE/DBSA-Prototype?page-id=3%3A2&node-id=27%3A3309&viewport=4485%2C-948%2C0.5&scaling=scale-down&starting-point-node-id=70%3A3524'} sx={linkCSS}>check it out!</Link>
                 </Text>
             </Flex>
         </Box >

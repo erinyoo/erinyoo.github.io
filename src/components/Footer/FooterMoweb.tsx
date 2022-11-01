@@ -24,13 +24,13 @@ const Footer: FC = () => {
                 </Box>
                 <Box sx={{ paddingTop: 2 }}>
                     <Link to="mailto:hello@erinyoo.com" activeClassName="active" sx={linkCSS}>
-                        <StaticImage sx={{ margin: 2 }} src={"../../images/Mail.png"} alt={"Mail"} width={26} />
+                        <StaticImage sx={{ margin: 2 }} src={"../../images/Mail.png"} alt={"Mail"} placeholder={'none'} width={26} />
                     </Link>
                     <Link to="https://dribbble.com/erinyoo" activeClassName="active" sx={linkCSS}>
-                        <StaticImage sx={{ margin: 2 }} src={"../../images/Dribbble.png"} alt={"Dribbble"} width={24} />
+                        <StaticImage sx={{ margin: 2 }} src={"../../images/Dribbble.png"} alt={"Dribbble"} placeholder={'none'} width={24} />
                     </Link>
                     <Link to="https://www.linkedin.com/in/erinyoo/" activeClassName="active" sx={linkCSS}>
-                        <StaticImage sx={{ margin: 2 }} src={"../../assets/LinkedIn.svg"} alt={"LinkedIn"} width={22} />
+                        <StaticImage sx={{ margin: 2 }} src={"../../assets/LinkedIn.svg"} alt={"LinkedIn"} placeholder={'none'} width={22} />
                     </Link>
                 </Box>
             </Box>

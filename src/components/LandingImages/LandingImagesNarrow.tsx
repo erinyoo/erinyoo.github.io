@@ -6,7 +6,7 @@ const LandingImagesNarrow: FC = () => {
     return (
         <>
             <div style={{ position: 'absolute', top: 180, right: -30 }}>
-                <StaticImage alt={"erin"} src={"../../images/erin.png"} width={400} />
+                <StaticImage alt={"erin"} src={"../../images/erin.png"} placeholder={'none'} width={400} />
             </div>
         </>
     );

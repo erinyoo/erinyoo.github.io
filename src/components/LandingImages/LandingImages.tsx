@@ -35,27 +35,27 @@ const LandingImages: FC = () => {
   return (
     <>
       <motion.div style={{ translateX: xErin, translateY: yErin, position: 'absolute', top: 250, right: 10, zIndex: 1 }}>
-        <StaticImage alt={"erin"} src={"../../images/erin.png"} width={390} />
+        <StaticImage alt={"erin"} src={"../../images/erin.png"} placeholder={'none'} width={390} />
       </motion.div>
 
       <motion.div style={{ translateX: xGP, translateY: yGP, top: 300, right: 350, zIndex: 4, position: 'absolute' }}>
-        <StaticImage alt={"greenpaint"} src={"../../images/greenpaint.png"} width={450} />
+        <StaticImage alt={"greenpaint"} src={"../../images/greenpaint.png"} placeholder={'none'} width={450} />
       </motion.div>
 
       <motion.div style={{ translateX: xDog, translateY: yDog, left: 100, top: 450, position: 'absolute' }}>
-        <StaticImage alt={"doggo"} src={"../../images/doggo.png"} width={300} />
+        <StaticImage alt={"doggo"} src={"../../images/doggo.png"} placeholder={'none'} width={300} />
       </motion.div>
 
       <motion.div style={{ translateX: xBallOne, translateY: yBallOne, top: 550, left: 440, zIndex: 2, position: 'absolute' }}>
-        <StaticImage alt={"tennisballone"} src={"../../images/tennisballone.png"} width={100} />
+        <StaticImage alt={"tennisballone"} src={"../../images/tennisballone.png"} placeholder={'none'} width={100} />
       </motion.div>
 
       <motion.div style={{ translateX: xBallTwo, translateY: yBallTwo, top: 520, left: 620, zIndex: 3, position: 'absolute' }}>
-        <StaticImage alt={"tennisballtwo"} src={"../../images/tennisballtwo.png"} width={100} />
+        <StaticImage alt={"tennisballtwo"} src={"../../images/tennisballtwo.png"} placeholder={'none'} width={100} />
       </motion.div>
 
       <motion.div style={{ translateX: xBP, translateY: yBP, top: 490, left: 500, position: 'absolute' }}>
-        <StaticImage alt={"bouncepaint"} src={"../../images/bouncepaint.png"} width={400} />
+        <StaticImage alt={"bouncepaint"} src={"../../images/bouncepaint.png"} placeholder={'none'} width={400} />
       </motion.div>
     </>
   );

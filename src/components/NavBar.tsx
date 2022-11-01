@@ -15,7 +15,7 @@ const NavBar: FC = () => {
     return (
         <Flex sx={{ py: 4, justifyContent: 'center', px: 3 }}>
             <Box sx={{ textAlign: 'left' }}>
-                <Link to={'/'} activeClassName="active" ><StaticImage alt={"signature"} src={"../images/signature.png"} width={95} /></Link>
+                <Link to={'/'} activeClassName="active" ><StaticImage alt={"signature"} src={"../images/signature.png"} placeholder={'none'} width={95} /></Link>
             </Box>
             <Box sx={{ textAlign: 'right', alignContent: "flex-end", paddingTop: 3, marginLeft: 'auto', }}>
                 <Link to="/" activeClassName="active"

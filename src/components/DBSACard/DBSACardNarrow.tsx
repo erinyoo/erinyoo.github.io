@@ -30,7 +30,7 @@ const DBSACardNarrow: FC = () => {
                             </Flex>
                         </Box>
                         <Box style={{ marginBottom: -55 }} sx={{ width: '90%', alignSelf: 'center', zIndex: 1, paddingTop: 6 }}>
-                            <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} height={1000} />
+                            <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} placeholder={'none'} height={1000} />
                         </Box>
                     </Flex>
                 </Card>

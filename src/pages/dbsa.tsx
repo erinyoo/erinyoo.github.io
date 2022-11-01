@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Box } from 'theme-ui';
 import DBSAContent from '../components/DBSA/DBSAContent';
+import DBSAContentNarrow from '../components/DBSA/DBSAContentNarrow';
 import NavBar from '../components/NavBar';
 import Moweb from '../components/ResponsiveViews/Moweb';
 import Narrow from '../components/ResponsiveViews/Narrow';
@@ -18,13 +19,15 @@ const DBSAPage = () => {
                 </Box>
             </Wide>
             <Narrow>
-                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 600 }}>
+                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 700 }}>
                     <NavBar />
+                    <DBSAContentNarrow />
                 </Box>
             </Narrow>
             <Moweb>
-                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 500 }}>
+                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 650 }}>
                     <NavBar />
+                    <DBSAContentNarrow />
                 </Box>
             </Moweb>
         </>

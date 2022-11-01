@@ -31,7 +31,7 @@ const DBSACard: FC = () => {
                             </Flex>
                         </Box>
                         <Box sx={{ width: '70%', alignSelf: 'flex-end', zIndex: 1, marginTop: -30, marginBottom: -30 }}>
-                            <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} height={1500} />
+                            <StaticImage src={"../../images/DBSAPreview.png"} alt={"DBSA"} placeholder={'none'} height={1500} />
                         </Box>
                     </Flex>
                 </Card>

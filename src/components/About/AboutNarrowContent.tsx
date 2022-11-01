@@ -16,7 +16,7 @@ const AboutNarrowContent = () => {
         <Box sx={{ width: '80%', position: 'absolute', left: 0, right: 0, marginLeft: 'auto', marginRight: 'auto' }}>
             <Flex sx={{ flexDirection: 'column' }}>
                 <Box sx={{ width: '70%', textAlign: 'center', marginRight: 'auto', marginLeft: 'auto', left: 0, right: 0 }}>
-                    <StaticImage src={"../../images/abouterin.png"} alt={"About Erin"} width={600} />
+                    <StaticImage src={"../../images/abouterin.png"} alt={"About Erin"} placeholder={'none'} width={600} />
                 </Box>
                 <Box sx={{ fontSize: 2, width: '100%' }}>
                     <AboutParagraph />
@@ -24,14 +24,14 @@ const AboutNarrowContent = () => {
                         <Text sx={{ fontWeight: 'bold', fontSize: 3 }}>hello@erinyoo.com</Text>
                         <Box>
                             <Link to="https://dribbble.com/erinyoo" activeClassName="active" sx={linkCSS}>
-                                <StaticImage sx={{ margin: 2 }} src={"../../images/Dribbble.png"} alt={"Dribbble"} width={24} />
+                                <StaticImage sx={{ margin: 2 }} src={"../../images/Dribbble.png"} alt={"Dribbble"} placeholder={'none'} width={24} />
                             </Link>
                             <Link to="https://www.linkedin.com/in/erinyoo/" activeClassName="active" sx={linkCSS}>
-                                <StaticImage sx={{ margin: 2 }} src={"../../assets/LinkedIn.svg"} alt={"LinkedIn"} width={22} />
+                                <StaticImage sx={{ margin: 2 }} src={"../../assets/LinkedIn.svg"} alt={"LinkedIn"} placeholder={'none'} width={22} />
                             </Link>
                         </Box>
                     </Box>
-                    <Box sx={{ width: '30%', marginBottom: 6 }}></Box><StaticImage src={"../../images/erinandeevee.png"} alt={"Erin and Eevee"} width={700} />
+                    <Box sx={{ width: '30%', marginBottom: 6 }}></Box><StaticImage src={"../../images/erinandeevee.png"} alt={"Erin and Eevee"} placeholder={'none'} width={700} />
                 </Box>
             </Flex>
         </Box>
