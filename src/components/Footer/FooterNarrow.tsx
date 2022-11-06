@@ -19,7 +19,7 @@ const Footer: FC = () => {
             <Box sx={{ alignSelf: 'center', width: 200, paddingTop: 4 }}>
                 <Box sx={{ width: 200 }}>
                     <Text sx={{ fontSize: 1, color: 'text', fontWeight: 'titles', textDecorationLine: 'none' }}>
-                        This website was built with Gatsby & React.
+                        This website was <Link sx={linkCSS} to={'https://github.com/erinyoo/erinyoo.github.io'}>built</Link> with Gatsby & React.
                     </Text>
                 </Box>
                 <Box sx={{ width: 200, paddingTop: 2, }}>

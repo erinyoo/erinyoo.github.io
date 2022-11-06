@@ -12,7 +12,7 @@ const AboutParagraph = () => {
                     '&.active': {
                         color: 'primary',
                     },
-                }} to={'https://techcommunity.microsoft.com/t5/microsoft-viva-blog/announcing-answers-in-microsoft-viva/ba-p/3634288#:~:text=Answers%20within%20Viva%20Engage&text=Answers%20helps%20organize%20questions%20and,to%20existing%20knowledge%20and%20experts.&text=Users%20can%20ask%20questions%2C%20see,own%20answers%20to%20open%20questions.&text=Users%20can%20also%20follow%20individual,when%20new%20questions%20are%20available.'}>Viva Engage Answers</Link> effort. My next career journey is to shift into product design, a scary endeavor but one I truly believe is my next calling.
+                }} to={'https://techcommunity.microsoft.com/t5/microsoft-viva-blog/announcing-answers-in-microsoft-viva/ba-p/3634288#:~:text=Answers%20within%20Viva%20Engage&text=Answers%20helps%20organize%20questions%20and,to%20existing%20knowledge%20and%20experts.&text=Users%20can%20ask%20questions%2C%20see,own%20answers%20to%20open%20questions.&text=Users%20can%20also%20follow%20individual,when%20new%20questions%20are%20available.'}>Viva Engage Answers</Link> effort. My next career step is into product design, this website will help document that journey.
             </p>
 
             <p>
@@ -21,7 +21,7 @@ const AboutParagraph = () => {
                     '&.active': {
                         color: 'primary',
                     },
-                }} to={'https://techcommunity.microsoft.com/t5/yammer-blog/the-new-yammer-is-generally-available-worldwide/ba-p/1521869'}>Yammer shift into "Glammer"</Link>, design has sprouted a solid space within the team and has also been an integral part of my work as a frontend engineer. The new Viva Engage push was the real big stepping stone into design. I was given the opportunity to work closely with a team of talented designers who inspire me constantly. The same things that drove me to become a frontend developer now translate to the core reasons I find product design my next step: <Text sx={{ fontWeight: 'bold' }}>an appreciation for the aesthetics</Text>, <Text sx={{ fontWeight: 'bold' }}>the desire to challenge my creativity</Text>, and <Text sx={{ fontWeight: 'bold' }}>a love for creating for the user</Text>.
+                }} to={'https://techcommunity.microsoft.com/t5/yammer-blog/the-new-yammer-is-generally-available-worldwide/ba-p/1521869'}>Yammer shift into "Glammer"</Link>, design has sprouted a space within the team and has also been an integral part of my work as a frontend engineer. The new Viva Engage effort has given me a special opportunity to work closely with a team of talented designers to build out new features. The same things that drove me to become a frontend developer now translate to the core reasons I find product design so enticing: <Text sx={{ fontWeight: 'bold' }}>an appreciation for the aesthetics</Text>, <Text sx={{ fontWeight: 'bold' }}>the desire to challenge my creativity</Text>, and <Text sx={{ fontWeight: 'bold' }}>a love for creating for the user</Text>.
             </p>
 
             <p>
