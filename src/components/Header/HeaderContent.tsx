@@ -1,12 +1,19 @@
 /** @jsxImportSource theme-ui */
 import { FC } from 'react'
-import { Text } from 'theme-ui';
+import { Box, Text } from 'theme-ui';
 
 const HeaderContent: FC = () => {
     return (
-        <Text sx={{ fontSize: 3, color: 'text', fontWeight: 'body' }}>
-            I'm focused on creating design & development harmony and excited to discover the best possible user experience.
-        </Text>
+        <>
+            <Box sx={{ marginBottom: 2 }}>
+                <Text sx={{ fontSize: 3, color: '#CDC8C7', fontWeight: 'body' }}>
+                    Product Design @ Microsoft
+                </Text>
+            </Box>
+            <Text sx={{ fontSize: 3, color: 'text', fontWeight: 'body' }}>
+                I'm passionate about cultivating design & development harmony and determined to discover the best possible user experience.
+            </Text>
+        </>
     );
 };
 
