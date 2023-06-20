@@ -1,13 +1,13 @@
 /** @jsxImportSource theme-ui */
 import { Box } from 'theme-ui';
-import DBSAContent from '../components/DBSA/DBSAContent';
-import DBSAContentNarrow from '../components/DBSA/DBSAContentNarrow';
+import AboutNarrowContent from '../components/About/AboutNarrowContent';
 import NavBar from '../components/NavBar';
 import Moweb from '../components/ResponsiveViews/Moweb';
 import Narrow from '../components/ResponsiveViews/Narrow';
 import Wide from '../components/ResponsiveViews/Wide';
+import AboutContent from '../components/About/About';
 
-const DBSAPage = () => {
+const AboutPage = () => {
 
     return (
         <>
@@ -15,31 +15,31 @@ const DBSAPage = () => {
             <Wide>
                 <Box sx={{ position: 'absolute', zIndex: 3, marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 1200 }}>
                     <NavBar />
-                    <DBSAContent />
+                    <AboutContent />
                 </Box>
             </Wide>
             <Narrow>
-                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 700 }}>
+                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 600 }}>
                     <NavBar />
-                    <DBSAContentNarrow />
+                    <AboutNarrowContent />
                 </Box>
             </Narrow>
             <Moweb>
-                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 650 }}>
+                <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 500 }}>
                     <NavBar />
-                    <DBSAContentNarrow />
+                    <AboutNarrowContent />
                 </Box>
             </Moweb>
         </>
     )
 }
 
-export default DBSAPage
+export default AboutPage
 
 export const Head = () => {
     return (
         <>
-            <title>DBSA Wellness</title>
+            <title>About Me</title>
         </>
     );
 };

@@ -1,0 +1,110 @@
+$textColor: #1B1810;
+$blue: #758DF9;
+$green: #B1E463;
+$pink: #FF6D88;
+$orange: #FFB865;
+$purple: #CC99F3;
+$white: #FCFAFA;
+
+body {
+    a {
+        color: $textColor;
+        text-decoration: none;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.headerabout {
+    margin: 0 auto;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutcontent {
+    position: relative;
+    padding: 32px 48px;
+    border: 2px solid $textColor;
+    border-radius: 10px;
+    width: 600px;
+    margin-top: -35px;
+    background-color: $white;
+    z-index: 2;
+}
+
+.resumelink {
+    border-radius: 28px;
+    border: 2px solid $textColor;
+    box-shadow: 2px 3px 0px $textColor;
+    margin-left: 12px;
+    padding: 14px 24px;
+    transition: all .6s ease-in-out;
+}
+
+.resumelink:hover {
+    box-shadow: 2px 3px 0px $purple;
+    transition: all .3s ease-in-out;
+}
+
+.navlink {
+    padding: 12px 24px;
+    color: $textColor;
+
+    a {
+        color: $textColor;
+        text-decoration: none;
+        position: relative;
+    }
+
+    a::before {
+        content: '';
+        background-color: $blue;
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        width: 100%;
+        height: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+
+    a:hover::before {
+        bottom: 0;
+        height: 50%;
+    }
+
+    a.active::before {
+        content: '';
+        background-color: $blue;
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        width: 100%;
+        height: 6px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+
+    a.active:hover::before {
+        bottom: 0;
+        height: 50%;
+    }
+}
+
+.navbar {
+    width: 85%;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
