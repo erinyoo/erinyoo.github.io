@@ -22,6 +22,7 @@ const theme = {
     10,
     12,
     16,
+    20,
     24,
     40,
     64
@@ -29,7 +30,7 @@ const theme = {
   fontWeights: {
     normal: 400,
     body: 450,
-    bold: 600,
+    bold: 650,
   },
   lineHeights: {
     title: '77px',
@@ -57,7 +58,7 @@ const theme = {
   styles: {
     root: {
       fontFamily: 'inter',
-      fontWeight: 'body'
+      fontWeight: 'normal'
     },
     h1: {
       color: 'text',

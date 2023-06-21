@@ -7,7 +7,7 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+    apiKey: process.env.GATSBY_FIREBASE_API_KEY || 'mock',
     authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
     databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
     projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,

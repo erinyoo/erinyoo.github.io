@@ -13,7 +13,7 @@ const ResumeLinkProps: FC<ResumeLinkProps> = ({ isActive, label, to }) => {
     const active = isActive ? "active" : undefined;
 
     return (
-        <div className="resumelink" sx={{ fontSize: 2, fontWeight: "bold" }}>
+        <div className="resumelink buttontext">
             <a className={active} href={to}>{label}</a>
         </div>
     );

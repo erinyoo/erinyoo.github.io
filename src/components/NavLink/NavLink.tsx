@@ -8,15 +8,15 @@ interface NavLinkProps {
     readonly to: string;
 }
 
-const NavLinkProps: FC<NavLinkProps> = ({ isActive, label, to }) => {
+const NavLink: FC<NavLinkProps> = ({ isActive, label, to }) => {
 
     const active = isActive ? "active" : undefined;
 
     return (
-        <div className="navlink" sx={{ fontSize: 2, fontWeight: "bold" }}>
+        <div className="navlink buttontext">
             <a className={active} href={to}>{label}</a>
         </div>
     );
 };
 
-export default NavLinkProps;
+export default NavLink;
