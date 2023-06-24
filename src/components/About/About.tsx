@@ -4,7 +4,7 @@ import "../../theme/styles.scss"
 const About = () => {
     return (
         <div className="body aboutcontent">
-           Previously a <span className="frontend">frontend aficionado</span>, currently a <span className="productdesign">product design devotee</span>. The design world nurtures much of what I love about frontend: the aesthetics, an ever-changing challenge, and (of course) the user. Right now, I'm honing my expertise at Microsoft.
+           I'm a curious, challenge seeking, art-obsessed, lover of the aesthetics who is currently building and advocating for the user at Microsoft.
         </div>
     )
 }

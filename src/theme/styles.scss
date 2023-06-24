@@ -16,17 +16,17 @@ body {
 .title {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 77px;
+    font-weight: 450;
+    font-size: 42px;
     letter-spacing: -0.02em;
+    word-spacing: 2px;
 }
 
 .subheader2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 39px;
     letter-spacing: -0.01em;
 }
@@ -79,7 +79,6 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.03em;
 }
 
 .frontend {
@@ -91,11 +90,10 @@ body {
 }
 
 .displaycard {
-    border: 2px solid $textColor;
+    border: 1px solid $textColor;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    max-width: 750px;
+    flex-direction: column;
 }
 
 .displaycontent {
@@ -103,16 +101,11 @@ body {
     flex-direction: column;
     gap: 12px;
     padding: 48px 24px;
-    height: 300px;
+    max-width: 700px;
 }
 
 .displayimage {
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
-    max-width: 450px;
-    object-fit: cover;
+    max-width: 100%;
 }
 
 .page {
@@ -131,60 +124,54 @@ body {
 }
 
 .selectedworks {
+    width: 85%;
     margin: 0 auto;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 32px;
+    justify-content: space-between;
+    padding: 24px 0px 0px 0px;
+}
+
+.swimage {
+    margin-top: -20px;
 }
 
 .swheader {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-self: center;
     align-items: center;
-    margin-top: 72px;
-    margin-bottom: 32px;
     gap: 12px;
-}
-
-.swimage {
-    margin-bottom: 30px;
-    width: 70px;
+    width: 85%;
+    padding: 72px 0px 0px
 }
 
 .lines {
-    width: 25%;
-    height: 0px;
-    border: 1px solid $textColor;
+    flex-grow: 1;
+    border-bottom: 1px solid $textColor;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 600px;
+    display: inline;
+    max-width: 850px;
+    padding: 72px 0px 0px 0px;
 }
 
 .headerabout {
     margin: 0 auto;
     width: 85%;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 
 .aboutcontent {
     position: relative;
     line-height: 140%;
-    padding: 32px 48px;
-    border: 2px solid $textColor;
-    border-radius: 10px;
-    width: 600px;
-    margin-top: -35px;
-    background-color: $white;
-    z-index: 2;
+    max-width: 850px;
 }
 
 .resumelink {
@@ -202,7 +189,7 @@ body {
 }
 
 .navlink {
-    padding: 12px 24px;
+    padding: 12px 18px;
     color: $textColor;
 
     a {
@@ -249,10 +236,11 @@ body {
 .navbar {
     width: 85%;
     margin: 0 auto;
-    height: 150px;
+    height: 75px;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
+    border-bottom: 1px solid $textColor;
 }
 
 .navright {

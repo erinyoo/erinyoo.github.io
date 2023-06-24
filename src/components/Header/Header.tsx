@@ -6,8 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Header: FC = () => {
     return (
         <div className="title header">
-            Hi! I'm Erin
-            <StaticImage src={"../../images/abouterin.png"} alt={"About Erin"} placeholder={'none'} width={250} />
+            Hello world! I'm Erin <StaticImage src={"../../images/abouterin.png"} alt={"About Erin"} placeholder={'none'} height={50} />a frontend (dev)otee turned product design aficionado
         </div >
     );
 };
