@@ -16,7 +16,7 @@ const DisplayCard: FC<DisplayCardProps> = ({ title, description, img }) => {
         <div className="displaycard">
             <div className="displayimage">{img}</div>
             <div className="displaycontent">
-                <div className="subheader3">{title}</div>
+                <div className="subheader2">{title}</div>
                 <div className="body">{description}</div>
             </div>
         </div>
