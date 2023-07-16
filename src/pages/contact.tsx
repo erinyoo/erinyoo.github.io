@@ -1,22 +1,22 @@
-/** @jsxImportSource theme-ui */
-import { Box } from 'theme-ui';
-import NavBar from '../components/NavBar';
-import AboutContent from '../components/About/About';
+// /** @jsxImportSource theme-ui */
+// import { Box } from 'theme-ui';
+// import NavBar from '../components/NavBar';
+// import AboutContent from '../components/About/About';
 
-const AboutPage = () => {
+// const AboutPage = () => {
 
-    return (
-        <>
-        </>
-    )
-}
+//     return (
+//         <>
+//         </>
+//     )
+// }
 
-export default AboutPage
+// export default AboutPage
 
-export const Head = () => {
-    return (
-        <>
-            <title>About Me</title>
-        </>
-    );
-};
+// export const Head = () => {
+//     return (
+//         <>
+//             <title>About Me</title>
+//         </>
+//     );
+// };
