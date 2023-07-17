@@ -204,9 +204,15 @@ body {
     border-bottom: 1px solid $textColor;
 }
 
+.code {
+    margin-top: 12px;
+}
+
 .header {
     display: inline;
-    max-width: 980px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
     padding: 145px 0px 0px 0px;
 }
 
