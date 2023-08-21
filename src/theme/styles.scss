@@ -54,7 +54,7 @@ body {
     font-family: $titleFont, sans-serif;
     font-size: 18px;
     letter-spacing: 0.24px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .body {
@@ -181,6 +181,15 @@ body {
     flex-direction: row;
     gap: 24px;
     justify-content: space-between;
+    padding: 48px 0px 0px 0px;
+}
+
+.wip {
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
     padding: 48px 0px 0px 0px;
 }
 

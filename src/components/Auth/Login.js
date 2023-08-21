@@ -8,14 +8,12 @@ import "../../theme/styles.scss"
 const Login = () => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-    // const history = useHistory();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(auth, 'erinswyoo@gmail.com', password);
-            navigate(-1);
-            // navigate(history.goBack());
+            navigate(`/secret/answersadmin`);
         } catch (err) {
             setError(err.message);
         }
