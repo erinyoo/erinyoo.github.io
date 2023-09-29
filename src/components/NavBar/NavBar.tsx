@@ -13,8 +13,8 @@ const NavBar: FC<NavBarProps> = ({ currentPage }) => {
         <div className="navbar">
             <div className="navright">
                 <NavLink isActive={currentPage === "home"} label="Home" to="/" />
-                <NavLink isActive={currentPage === "contact"} label="Contact" to="mailto:hello@erinyoo.com" />
-                <NavLink isActive={currentPage === "resume"} label="Resume" to="https://drive.google.com/file/d/1V3lsY2jwbWkCeVdtrhm9W79c-kbngArO/view?usp=sharing" newTab={true} />
+                <NavLink isActive={currentPage === "contact"} label="Contact" to="/contact" />
+                <NavLink isActive={currentPage === "resume"} label="Resume" to="https://drive.google.com/file/d/1R4z4oh-H86TLd6DBfrVlB6iRTTbxfBC6/view?usp=sharing" newTab={true} />
             </div>
         </div>
     )

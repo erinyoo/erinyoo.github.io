@@ -4,6 +4,7 @@ $textColor: #1B1810;
 $blue: #758DF9;
 $green: #B1E463;
 $pink: #FF6D88;
+$alert: #d72929;
 $orange: #FFB865;
 $purple: #CC99F3;
 $white: #FCFAFA;
@@ -22,6 +23,10 @@ body {
     b {
         font-weight: 550;
     }
+}
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+    cursor: pointer;
 }
 
 .login {
@@ -98,6 +103,113 @@ body {
         text-decoration-color: $textColor;
         transition: all .3s ease-in-out;
     }
+}
+
+.forminput {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.artdisplay {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 85%;
+    padding: 48px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 40%;
+    padding: 175px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.contactform {
+    gap: 24px;
+    flex-direction: column;
+    display: flex;
+}
+
+.placeholder {
+    font-family: $bodyFont, sans-serif;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.1px;
+}
+
+.textfield {
+    background-color: $white;
+    padding: 16px 16px;
+    border-radius: 8px;
+    border: 1px solid $textColor;
+}
+
+.textarea {
+    background-color: $white;
+    border: 1px sold $textColor;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid $textColor;
+}
+
+.specialbutton {
+    padding: 8px 32px;
+    border-radius: 12px;
+    border: 1px solid $textColor;
+    background-color: $white;
+    transition: all 300ms 100ms ease;
+    box-shadow: 0px 0px $textColor;
+}
+
+.specialbutton:hover {
+    box-shadow: 3px 3px $purple;
+    border: 1px solid $purple;
+    transition: all 300ms ease;
+}
+
+.specialbuttongreen {
+    padding: 8px 32px;
+    border-radius: 12px;
+    border: 1px solid $textColor;
+    background-color: $white;
+    transition: all 300ms 100ms ease;
+    box-shadow: 0px 0px $textColor;
+}
+
+.specialbuttongreen:hover {
+    box-shadow: 3px 3px $green;
+    border: 1px solid $green;
+    transition: all 300ms ease;
+}
+
+.required {
+    font-family: $bodyFont, sans-serif;
+    color: $alert;
+    font-size: 10px;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+
+.justify {
+    display:flex;
+    justify-content: space-between;
+}
+
+.justifycenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .section {
@@ -321,9 +433,18 @@ body {
     gap: 24px;
 }
 
-@media screen and (max-width: 350) {
+@media screen and (max-width: 350px) {
     .lines {
         flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lines {
+        flex-grow: 0;
+    }
+    .contactform {
+        width: 70%;
     }
 }
 
