@@ -1,160 +1,95 @@
 const theme = {
-  layoutBreakpoints: { sm: 385, md: 780, lg: 1024, xlg: 1500 },
   space: [
-    0,
     4,
     8,
+    12,
     16,
     24,
     32,
+    48,
     64,
     72,
     80,
-    95,
+    100,
+    112,
     120,
     140,
-    160,
-    180,
-    200,
-    230,
-    256,
-    300,
-    350,
-    400,
-    512
   ],
   fonts: {
-    body: 'Inter, sans-serif',
-    heading: 'Inter, sans-serif',
+    inter: 'Inter, sans-serif',
   },
   fontSizes: [
+    10,
     12,
-    14,
     16,
-    18,
     20,
     24,
-    30,
-    36,
-    48,
-    60,
-    72
+    40,
+    64
   ],
   fontWeights: {
-    body: 400,
-    titles: 520,
-    header: 620,
-    bold: 520,
+    normal: 400,
+    body: 450,
+    bold: 650,
   },
   lineHeights: {
-    body: 1.5,
-    heading: 1.125
+    title: '77px',
+    h2: '48px',
+    h3: '29px',
+    body: '22px',
+  },
+  letterSpacings: {
+    title: -0.02,
+    h2: -0.01,
   },
   colors: {
-    text: '#24191C',
-    background: '#FFFEFC',
-    primary: '#24191C',
-    secondary: '#AD999F',
-    muted: '#6b6868',
-    active: '#6cb2eb',
+    background: '#FCFAFA',
+    text: '#1B1810',
+    subtle: '#8B8A89',
+    accent: '#F0ECE8',
+    accentBorder: '#DED5CD',
+    alert: '#EE2D2D',
+    blue: '#758DF9',
+    green: '#B1E463',
+    pink: '#FF6D88',
+    orange: '#FFB865',
+    purple: '#CC99F3',
   },
   styles: {
     root: {
-      fontFamily: 'body',
-      lineHeight: 'body',
-      fontWeight: 'body'
+      fontFamily: 'inter',
+      fontWeight: 'normal'
     },
     h1: {
       color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
+      fontFamily: 'inter',
+      letterSpacing: 'title',
+      fontWeight: 'bold',
       fontSize: 5
     },
     h2: {
       color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
+      fontFamily: 'inter',
+      letterSpacing: 'h2',
+      fontWeight: 'bold',
       fontSize: 4
     },
     h3: {
       color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
+      fontFamily: 'inter',
+      fontWeight: 'bold',
       fontSize: 3
     },
-    h4: {
-      color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
-      fontSize: 2
-    },
-    h5: {
-      color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
-      fontSize: 1
-    },
-    h6: {
-      color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
-      fontSize: 0
-    },
-    p: {
-      color: 'text',
-      fontFamily: 'body',
-      fontWeight: 'body',
-      lineHeight: 'body'
-    },
     a: {
-      color: 'primary',
-      textDecoration: 'none',
-    },
-    pre: {
-      fontFamily: 'monospace',
-      overflowX: 'auto',
-      code: {
-        color: 'inherit'
-      }
-    },
-    code: {
-      fontFamily: 'monospace',
-      fontSize: 'inherit'
+      color: 'text',
     },
     table: {
       width: '100%',
       borderCollapse: 'separate',
       borderSpacing: 0
     },
-    th: {
-      textAlign: 'left',
-      borderBottomStyle: 'solid'
-    },
-    td: {
-      textAlign: 'left',
-      borderBottomStyle: 'solid'
-    },
     img: {
       maxWidth: '100%'
-    },
-    cards: {
-      primary: {
-        padding: 2,
-        borderRadius: 4,
-        boxShadow: '0 0 2px rgba(0, 0, 0, 0.125)',
-      },
-      compact: {
-        padding: 1,
-        borderRadius: 2,
-        border: '1px solid',
-        borderColor: 'muted',
-      },
     },
   }
 }

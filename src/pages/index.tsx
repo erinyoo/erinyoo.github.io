@@ -1,72 +1,42 @@
 /** @jsxImportSource theme-ui */
-import { Flex, Box } from 'theme-ui';
+import "../theme/styles.scss"
+
+
+import About from '../components/About/About';
 import Header from '../components/Header/Header';
-import NavBar from '../components/NavBar';
-import LandingImages from '../components/LandingImages/LandingImages';
-import DBSACard from '../components/DBSACard/DBSACard';
+// import DisplayCard from '../components/DisplayCard/DisplayCard';
 import Footer from '../components/Footer/Footer';
-import LandingImagesNarrow from '../components/LandingImages/LandingImagesNarrow';
-import HeaderNarrow from '../components/Header/HeaderNarrow';
-import LandingImagesMoweb from '../components/LandingImages/LandingImageMoweb';
-import HeaderMoweb from '../components/Header/HeaderMoweb';
-import DBSACardNarrow from '../components/DBSACard/DBSACardNarrow';
-import FooterNarrow from '../components/Footer/FooterNarrow';
-import FooterMoweb from '../components/Footer/FooterMoweb';
-import DBSACardMoweb from '../components/DBSACard/DBSACardMoweb';
-import Wide from '../components/ResponsiveViews/Wide';
-import Narrow from '../components/ResponsiveViews/Narrow';
-import Moweb from '../components/ResponsiveViews/Moweb';
+import NavBar from '../components/NavBar/NavBar';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
 
   return (
-    <>
-      <meta name="viewport" content="width=400, initial-scale=.65" />
-      <Wide>
-        <Box sx={{ position: 'absolute', zIndex: 3, marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 1200 }}>
-          <NavBar />
+    <div className="page">
+      <NavBar currentPage="home" />
+      <div className="headerabout">
+        <Header />
+        <About />
+      </div>
 
-          <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 3, marginRight: 7 }}>
-            <Header />
-            <LandingImages />
-          </Flex>
+      <div className="swheader subheader2"><StaticImage className="swimage" src={'../images/plant.png'} alt={"selected studies"} placeholder={'none'} width={45} />Selected Studies<div className="lines" /></div>
 
-          <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 3, marginRight: 7 }}>
-            <DBSACard />
-          </Flex>
-        </Box >
+      <div className="wip">
+        <StaticImage width={500} src={'../images/wip.png'} alt={"work item image"} placeholder={'none'} />
 
-        <Footer />
-      </Wide>
+        <div className="subbutton">At this moment, I'm still gaining experience. Checkout my personal projects in the meanwhile.</div>
 
-      <Narrow>
-        <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 600 }}>
-          <NavBar />
+        {/* <DisplayCard title={"Suggesting topics, AI style"} description={"Searching, choosing, and adding the right topics to label  questions are hard, that's why we utilized AI to suggest the perfect ones."} img={<StaticImage width={900} src={'../images/aisuggested.png'} alt={"work item image"} placeholder={'none'} />} linkTo={"/aisuggestion"} />
 
-          <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 3, marginRight: 7 }}>
-            <HeaderNarrow />
-            <LandingImagesNarrow />
-          </Flex>
+        <DisplayCard title={"Improving the admin experience"} description={"Sometimes improving an experience can mean taking a step back to look at the bigger picture."} img={<StaticImage width={900} src={'../images/featuredtopics.png'} alt={"work item image"} placeholder={'none'} />} linkTo={"/secret/answersadmin"} />
 
-          <Flex dir={'row'} sx={{ marginTop: 10, marginLeft: 3, marginRight: 7 }}>
-            <DBSACardNarrow />
-          </Flex>
-        </Box >
+        <DisplayCard title={"Managing mental health made easy"} description={"First, managing your mental health is never easy. Second, DBSA's wellness resources weren't widely accessible. Third, we aimed to fix these problems."} img={<StaticImage width={900} src={'../images/dbsadisplay.png'} alt={"work item image"} placeholder={'none'} />} linkTo={"/dbsa"} /> */}
+      </div>
 
-        <FooterNarrow />
-      </Narrow>
+      <div className="swheader subheader2"><StaticImage className="swimage" src={'../images/doodlings.png'} alt={"selected studies"} placeholder={'none'} width={45} />Doodlings<div className="lines" /></div>
 
-      <Moweb>
-        <Box sx={{ position: 'absolute', marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0, width: 500 }}>
-          <NavBar />
-          <LandingImagesMoweb />
-          <HeaderMoweb />
-          <DBSACardMoweb />
-        </Box >
-
-        <FooterMoweb />
-      </Moweb>
-    </>
+      <Footer />
+    </div>
   )
 }
 

@@ -9,11 +9,23 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-theme-ui"]
+  plugins: ["gatsby-plugin-theme-ui", `gatsby-plugin-sass`]
 };
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-theme-ui',
       options: {
@@ -21,23 +33,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-omni-font-loader`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-        web: [
-          {
-            name: `Inter`,
-            file: `https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap`,
-          },
-        ],
+        typekit: {
+          id: 'lgm3kwl',
+        },
+        google: {
+          families: ['Inter:300,400,500,600'],
+        }
       },
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
+          include: /assets/
         }
       }
     },

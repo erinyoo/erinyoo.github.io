@@ -1,18 +1,13 @@
 /** @jsxImportSource theme-ui */
 import { FC } from 'react'
-import { Box, Text } from 'theme-ui';
-import HeaderContent from './HeaderContent';
+import "../../theme/styles.scss"
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Header: FC = () => {
     return (
-        <Box sx={{ flex: 'auto', marginTop: 2 }}>
-            <Text sx={{ fontSize: 9, color: 'text', fontWeight: 'header', textDecorationLine: 'none' }}>
-                Hi, I'm Erin
-            </Text>
-            <Box sx={{ width: '40%' }}>
-                <HeaderContent />
-            </Box>
-        </Box>
+        <div className="title header">
+            Hello world! <StaticImage src={"../../images/handwave.png"} alt={"About Erin"} placeholder={'none'} height={60} /> I'm Erin, a <StaticImage src={"../../images/computer.png"} alt={"About Erin"} placeholder={'none'} height={60} /> frontend devotee turned <StaticImage src={"../../images/designpoint.png"} alt={"leftbracket"} placeholder={'none'} height={60} /> product design aficionado
+        </div >
     );
 };
 
