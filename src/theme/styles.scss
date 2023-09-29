@@ -25,7 +25,13 @@ body {
     }
 }
 
-a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button,
+.pointer {
     cursor: pointer;
 }
 
@@ -201,7 +207,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 }
 
 .justify {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -433,18 +439,13 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     gap: 24px;
 }
 
-@media screen and (max-width: 350px) {
-    .lines {
-        flex-grow: 0;
-    }
-}
-
 @media screen and (max-width: 600px) {
-    .lines {
-        flex-grow: 0;
+    .form {
+        width: 90%;
     }
-    .contactform {
-        width: 70%;
+
+    .artdisplay {
+        flex-direction: column;
     }
 }
 
