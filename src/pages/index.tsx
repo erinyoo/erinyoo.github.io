@@ -36,11 +36,11 @@ const IndexPage = () => {
       <div className="swheader subheader2"><StaticImage className="swimage" src={'../images/doodlings.png'} alt={"selected studies"} placeholder={'none'} width={45} />Current Doodlings<div className="lines" /></div>
 
     <div className="artdisplay">
-      <StaticImage height={400} src={'../images/1.png'} placeholder={'none'} />
+      {/* <StaticImage height={400} src={'../images/1.png'} placeholder={'none'} />
       <StaticImage height={400} src={'../images/2.png'} placeholder={'none'} />
       <StaticImage height={400} src={'../images/3.jpg'} placeholder={'none'} />
       <StaticImage height={400} src={'../images/4.png'} placeholder={'none'} />
-      <StaticImage height={400} src={'../images/5.png'} placeholder={'none'} />
+      <StaticImage height={400} src={'../images/5.png'} placeholder={'none'} /> */}
     </div>
 
       <Footer />
